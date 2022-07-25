@@ -1,0 +1,120 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1756957/pexels-photo-1756957.jpeg?cs=srgb&dl=pexels-brett-sayles-1756957.jpg&fm=jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+/* https://blog.hubspot.com/website/center-div-css */
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+table {
+    width: 1000px;
+    height: 900px;
+    border-spacing: 20px 1px;
+    table-layout: fixed;
+}
+
+
+/*P1 P2 P3*/
+
+table tr td.top-parking-spot {
+    border-bottom: none;
+}
+
+
+/*P4 P5 P6*/
+
+table tr td.bottom-parking-spot {
+    border-top: none;
+}
+
+tr {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+/*individual parking spots -> P1...P6*/
+
+td.parking-spot {
+    border: 5px solid black;
+    height: 40%;
+}
+
+
+/*road in the middle*/
+
+td.road {
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    border: none;
+    height: 20%;
+}
+
+
+/* Line for the road */
+
+hr.dashed {
+    border: none;
+    border-top: 10px dashed white;
+    background-color: rgb(16, 16, 16);
+    height: 1px;
+    width: 100%;
+}
+
+
+/* Responsive 
+https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design */
+
+@media (max-width: 1007px) {
+    table {
+        width: 750px;
+        height: 690px;
+        border-spacing: 15px 1px;
+        table-layout: fixed;
+    }
+    /* Line for the road */
+    hr.dashed {
+        border: none;
+        border-top: 7px dashed white;
+        background-color: rgb(16, 16, 16);
+        height: 1px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 641px) {
+    table {
+        width: 500px;
+        height: 450px;
+        border-spacing: 10px 1px;
+        table-layout: fixed;
+    }
+    /* Line for the road */
+    hr.dashed {
+        border: none;
+        border-top: 4px dashed white;
+        background-color: rgb(16, 16, 16);
+        height: 1px;
+        width: 100%;
+    }
+}
+
+
+/* background colors */
+
+.free {
+    background-color: rgba(0, 255, 0, 0.9);
+}
+
+.occupied {
+    background-color: rgba(255, 0, 0, 0.9);
+}

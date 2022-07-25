@@ -1,0 +1,160 @@
+body {
+    background-image: url("../img/parklot.jpg");
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+/* https://blog.hubspot.com/website/center-div-css */
+
+#parent {
+    width: 700px;
+    height: 700px;
+    border: none;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+
+/*Button design*/
+
+.button {
+    display: inline-block;
+    background-color: gray;
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+    height: 50px;
+    width: 90px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+    opacity: 0;
+}
+
+#parent>#P1 {
+    opacity: 0.5;
+    position: relative;
+    float: left;
+    left: 120px;
+    bottom: 680px;
+}
+
+#parent>#P4 {
+    opacity: 0.5;
+    position: relative;
+    float: right;
+    right: 180px;
+    bottom: 680px;
+}
+
+#parent>#P2 {
+    opacity: 0.5;
+    position: relative;
+    float: left;
+    left: 20px;
+    bottom: 540px;
+}
+
+#parent>#P5 {
+    opacity: 0.5;
+    position: relative;
+    float: right;
+    right: 80px;
+    bottom: 540px;
+}
+
+#parent>#P3 {
+    opacity: 0.5;
+    position: relative;
+    float: left;
+    left: -80px;
+    bottom: 400px;
+}
+
+#parent>#P6 {
+    opacity: 0.5;
+    position: relative;
+    float: right;
+    right: -20px;
+    bottom: 400px;
+}
+
+
+/*Table design*/
+
+#parking_table {
+    width: 600px;
+    height: 600px;
+}
+
+
+/* Background-color of the odd rows */
+
+#parking_table tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+
+/* Background-color of the even rows */
+
+#parking_table tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+#parking_table th {
+    background-color: #1F2739;
+}
+
+
+/*Layout design*/
+
+#grid-container-element {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+}
+
+.grid-child-element {
+    margin: 10px;
+}
+
+#parking_table td {
+    text-align: center;
+}
+
+th {
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.park_number {
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+}
+
+.free {
+    background-color: rgba(0, 255, 0, 0.9);
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.occupied {
+    background-color: rgba(255, 0, 0, 0.9);
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-size: x-large;
+}
